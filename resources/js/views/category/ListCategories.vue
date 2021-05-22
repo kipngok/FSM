@@ -5,11 +5,7 @@
             <div class="col-sm-6">
                     <h4 style="font-weight:bold;  font-size: 25px; color: rgb(25 26 27);margin-top: -73px;"> <i class="fa fa-plus"></i>Categories</h4>
                 </div>
-                <div class="col-sm-4 createbtn">
-
-
-               <router-link :to="{name: 'createCategory'}" class="btn btn-success "><i class="fa fa-plus"></i> Create Category</router-link>
-                </div>
+               
         </div>
     </div>
  
