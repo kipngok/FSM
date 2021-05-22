@@ -15,6 +15,8 @@ class LocationController extends Controller
     public function index()
     {
         //
+        $locations = Location::all()->toArray();
+        return array_reverse($locations);  
     }
 
     /**
@@ -36,6 +38,15 @@ class LocationController extends Controller
     public function store(Request $request)
     {
         //
+            $this->validate($request,[
+            'name' => 'required|string',
+           
+        ]);
+        $location = new Location();
+        $location->name = $request->name;
+        $location->save();
+
+        return response()->json(['result'=>$location]);
     }
 
     /**
@@ -47,6 +58,7 @@ class LocationController extends Controller
     public function show(Location $location)
     {
         //
+        return response()->json($location);
     }
 
     /**

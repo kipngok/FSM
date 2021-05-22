@@ -15,6 +15,8 @@ class SectionController extends Controller
     public function index()
     {
         //
+          $sections = Section::all()->toArray();
+        return array_reverse($sections);  
     }
 
     /**
@@ -36,6 +38,18 @@ class SectionController extends Controller
     public function store(Request $request)
     {
         //
+         $this->validate($request,[
+            'name' => 'required|string',
+            'description' => 'required|string',
+        ]);
+
+        $section = new Section();
+        $section->name = $request->name;
+        $section->description = $request->description;
+        
+        $section->save();
+
+        return response()->json(['result'=>$section]);
     }
 
     /**
@@ -47,6 +61,7 @@ class SectionController extends Controller
     public function show(Section $section)
     {
         //
+        return response()->json($section);
     }
 
     /**
