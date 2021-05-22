@@ -15,6 +15,10 @@ class CategoryController extends Controller
     public function index()
     {
         //
+     
+
+         $categories = Category::all()->toArray();
+        return array_reverse($categories);   
     }
 
     /**
@@ -36,6 +40,18 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,[
+            'category_name' => 'required|string',
+            'description' => 'required|string',
+        ]);
+
+        $category = new Category();
+        $category->category_name = $request->category_name;
+        $category->description = $request->description;
+        
+        $category->save();
+
+        return response()->json(['result'=>$category]);
     }
 
     /**
@@ -47,6 +63,7 @@ class CategoryController extends Controller
     public function show(Category $category)
     {
         //
+        return response()->json($category);
     }
 
     /**
@@ -58,6 +75,7 @@ class CategoryController extends Controller
     public function edit(Category $category)
     {
         //
+         return response()->json($category);
     }
 
     /**
@@ -70,6 +88,9 @@ class CategoryController extends Controller
     public function update(Request $request, Category $category)
     {
         //
+         $category->update($request->all());
+
+        return response()->json('Category updated!');
     }
 
     /**
@@ -81,5 +102,9 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         //
+
+        $category->delete();
+
+        return response()->json('Category deleted!');
     }
 }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     use HasFactory;
+    protected $fillable = ['category_name','description'];
+
+    public function survey_Taking(){
+    	return $this->hasMany('App/Models/Survey_Taking','category_id','id');
+    }
 }

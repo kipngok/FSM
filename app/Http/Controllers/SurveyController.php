@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Survey;
+use App\Models\Location;
 use Illuminate\Http\Request;
 
 class SurveyController extends Controller
@@ -15,6 +16,9 @@ class SurveyController extends Controller
     public function index()
     {
         //
+        $locations= Location::all()->toArray();
+         $surveys = Survey::all()->toArray();
+        return array_reverse($surveys,$locations); 
     }
 
     /**
@@ -27,6 +31,13 @@ class SurveyController extends Controller
         //
     }
 
+        public function getLocations()
+    {
+        $location = Location::get();
+        return response()->json($location);
+    }
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -36,6 +47,22 @@ class SurveyController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate($request,[
+            'name' => 'required|string',
+            'description' => 'required|string',
+            'location_id' => 'required|string',
+            'status' => 'required|string',
+        ]);
+
+        $survey = new Survey();
+        $survey->name = $request->name;
+        $survey->description = $request->description;
+        $survey->location_id = $request->location_id;
+        $survey->status = $request->status;
+        
+        $category->save();
+
+        return response()->json(['result'=>$category]);
     }
 
     /**
