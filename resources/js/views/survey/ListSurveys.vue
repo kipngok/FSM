@@ -8,7 +8,7 @@
                 <div class="col-sm-4 createbtn">
 
 
-               <router-link :to="{name: 'createSurvey'}" class="btn btn-success "><i class="fa fa-plus"></i> Create Survey</router-link>
+              <!--  <router-link :to="{name: 'createSurvey'}" class="btn btn-success "><i class="fa fa-plus"></i> Create Survey</router-link> -->
                 </div>
         </div>
     </div>
