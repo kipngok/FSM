@@ -5,7 +5,7 @@
          
 
             <div class="col-sm-6">
-                    <h4 style="font-weight:bold;  font-size: 25px; color: rgb(25 26 27);margin-top: -73px;"> <i class="fa fa-plus"></i>Edit Category</h4>
+                    <h4 style="font-weight:bold;  font-size: 25px; color: rgb(25 26 27);margin-top: 0px;"> <i class="fa fa-plus"></i>Edit Category</h4>
                 </div>
         </div>
     </div>

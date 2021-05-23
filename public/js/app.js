@@ -2096,6 +2096,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -2115,6 +2116,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
 //
 //
 //
@@ -2616,10 +2620,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -2872,10 +2872,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
 //
 //
 //
@@ -3199,10 +3195,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
 //
 //
 //
@@ -8029,7 +8021,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.col-sm-6 {\r\n    flex: 0 0 50%;\r\n    max-width: 50%;\r\n    margin-top: 70px;\r\n     margin-left: 0px;\n}\r\n\r\n/*.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {\r\n    width: 173%;\r\n    padding-right: 15px;\r\n    padding-left: 15px;\r\n    margin-right: auto;\r\n    margin-left: auto;\r\n}*/\r\n/*.col {\r\n    -ms-flex-preferred-size: 0;\r\n    flex-basis: 0;\r\n    -ms-flex-positive: 1;\r\n    flex-grow: 1;\r\n    max-width: 64%;\r\n   margin-left: -467px;\r\n}*/\n.col {\r\n    flex-basis: 0;\r\n    flex-grow: 1;\r\n    max-width: 61%;\r\n    margin-left: -456px;\n}\n.page-header {\r\n    background-color: #eada0f !important;\r\n    padding: 20px;\r\n    width: 1135px;\r\n    height: 70px;\r\n    margin-bottom: 30px;\r\n    margin-left: 0px;\r\n    margin-top: 70px;\n}\n.row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin-right: 11px;\n}\n.shadow-sm {\r\n    position: fixed;\r\n    display: flex;\r\n    height: 70px;\r\n    z-index: 1;\r\n    width: 100%;\r\n    padding-left: 22.2px;\r\n    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;\n}\n.table {\r\n    width: 141%;\r\n    margin-bottom: 1rem;\r\n    color: #212529;\n}\n.nav-link {\r\n   \r\n    color: #ffffff;\r\n    font-weight: bolder;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;\n}\n.createbtn{\r\n  \r\n    flex: 0 0 33.333333%;\r\n    max-width: 33.333333%;\r\n    margin-left: 149px;\n}\n.sidebar {\r\n    float:left;\r\n    background-color:#8B8C90;\r\n    position: fixed;\r\n    padding: 0px;\r\n    min-height:85vh;\n}\n.sidebar-menu li a {\r\n    text-transform: capitalize;\r\n    color: #3a3b42;\r\n    font-weight: 400 !important;\r\n    padding: 5px;\r\n    display: block;\r\n    width: 100%;\r\n    padding-left: 20px;\r\n    font-size: 14px !important;\r\n    transition: ease-out 1s;\n}\n.sidebar-menu li{\r\n  list-style: none;\n}\n.sidebar-menu li a:hover{\r\n  text-decoration: none;\r\n  color: #FFF;\r\n  /*background-color: #fff;*/\r\n    transition: ease-in .5s;\n}\n.sidebar-menu li a.active {\r\n    text-decoration: none;\r\n    color: #E1B00B;\r\n    background-color: #FFF;\n}\n.sidebar-menu{\r\n  margin: 0px;\r\n  margin-top: 50px;\r\n    margin-bottom: 100px;\r\n  padding: 0px;\n}\n.nolist{\r\n    padding-left: 20px;\r\n    padding-bottom: 10px;\r\n    padding-top: 10px;\n}\n.sidebar .sidebar-menu li.nolistHighlight {\r\n    background-color: #17629e;\r\n    color: #1FB9B9;\r\n    text-decoration: none\n}\n.sidebar .sidebar-menu li.nolistHighlight a {\r\n    color: #1FB9B9;\n}\n.sidebar .sidebar-menu li ul {\r\n    display: none;\r\n    background-color: #ffffff;\n}\n.sidebar .sidebar-menu li ul li a {\r\n    font-size: 16px;\r\n    font-weight: 400;\r\n    color: #00000090;\r\n    padding-left: 10px;\n}\n.sidebar .sidebar-menu li ul li a.active {\r\n    background-color: initial;\r\n    color: #000;\r\n    padding-bottom: initial\n}\n.sidebar .sidebar-menu li ul li a:hover {\r\n    color:#000;\r\n    /*background-color: #DDDDDD50;*/\n}\n.sidebar .sidebar-menu a {\r\n  text-decoration: none !important;\r\n  font-weight: 600 !important;\n}\n.navy .fa-chevron-right{\r\n    float: right;\r\n    margin-right: 20px;\r\n    transition: ease-in-out .5s;\n}\n.navy.active .fa-chevron-right{\r\ntransform: rotate(90deg);\r\ntransition: ease-in-out .5s;\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.col-sidebar {\r\n    flex: 0 0 50%;\r\n    max-width: 50%;\r\n    margin-top: 70px;\r\n     margin-left: 0px;\n}\n.col {\r\n    flex-basis: 0;\r\n    flex-grow: 1;\r\n    max-width: 61%;\r\n    margin-left: -420px;\n}\n.page-header {\r\n    background-color: #eada0f !important;\r\n    padding: 20px;\r\n    width: 1135px;\r\n    height: 70px;\r\n    margin-bottom: 30px;\r\n    margin-left: 0px;\r\n    margin-top: 70px;\n}\n.row {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin-right: 11px;\n}\n.shadow-sm {\r\n    position: fixed;\r\n    display: flex;\r\n    height: 70px;\r\n    z-index: 1;\r\n    width: 100%;\r\n    padding-left: 22.2px;\r\n    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;\n}\n.table {\r\n    width: 141%;\r\n    margin-bottom: 1rem;\r\n    color: #212529;\n}\n.nav-link {\r\n   \r\n    color: #ffffff;\r\n    font-weight: bolder;\r\n    font-size: 16px;\r\n    text-decoration: none;\r\n    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;\n}\n.createbtn{\r\n  \r\n    flex: 0 0 33.333333%;\r\n    max-width: 33.333333%;\r\n    margin-left: 149px;\n}\n.sidebar {\r\n    float:left;\r\n    background-color: #171819;\r\n    position: fixed;\r\n    padding: 0px;\r\n    min-height:85vh;\n}\n.sidebar-menu li a {\r\n    text-transform: capitalize;\r\n    color: #3a3b42;\r\n    font-weight: 400 !important;\r\n    padding: 5px;\r\n    display: block;\r\n    width: 100%;\r\n    padding-left: 20px;\r\n    font-size: 14px !important;\r\n    transition: ease-out 1s;\n}\n.sidebar-menu li{\r\n  list-style: none;\n}\n.sidebar-menu li a:hover{\r\n  text-decoration: none;\r\n  color: #FFF;\r\n  /*background-color: #fff;*/\r\n    transition: ease-in .5s;\n}\n.sidebar-menu li a.active {\r\n    text-decoration: none;\r\n    color: #fff;\r\n    background-color: #949494;\n}\n.sidebar-menu{\r\n  margin: 0px;\r\n  margin-top: 50px;\r\n    margin-bottom: 100px;\r\n  padding: 0px;\n}\n.nolist{\r\n    padding-left: 20px;\r\n    padding-bottom: 10px;\r\n    padding-top: 10px;\n}\n.sidebar .sidebar-menu li.nolistHighlight {\r\n    background-color: #17629e;\r\n    color: #1FB9B9;\r\n    text-decoration: none\n}\n.sidebar .sidebar-menu li.nolistHighlight a {\r\n    color: #1FB9B9;\n}\n.sidebar .sidebar-menu li ul {\r\n    display: none;\r\n    background-color: #ffffff;\n}\n.sidebar .sidebar-menu li ul li a {\r\n    font-size: 16px;\r\n    font-weight: 400;\r\n    color: #00000090;\r\n    padding-left: 10px;\n}\n.sidebar .sidebar-menu li ul li a.active {\r\n    background-color: initial;\r\n    color: #000;\r\n    padding-bottom: initial\n}\n.sidebar .sidebar-menu li ul li a:hover {\r\n    color:#000;\r\n    /*background-color: #DDDDDD50;*/\n}\n.sidebar .sidebar-menu a {\r\n  text-decoration: none !important;\r\n  font-weight: 600 !important;\n}\n.navy .fa-chevron-right{\r\n    float: right;\r\n    margin-right: 20px;\r\n    transition: ease-in-out .5s;\n}\n.navy.active .fa-chevron-right{\r\ntransform: rotate(90deg);\r\ntransition: ease-in-out .5s;\n}\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40494,9 +40486,9 @@ var render = function() {
     ),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-sm-6 " }, [_c("SideBar")], 1),
+      _c("div", { staticClass: "col-sm-4 col-sidebar " }, [_c("SideBar")], 1),
       _vm._v(" "),
-      _c("div", { staticClass: "col rv" }, [_c("router-view")], 1)
+      _c("div", { staticClass: "col-sm-8 col" }, [_c("router-view")], 1)
     ])
   ])
 }
@@ -40545,16 +40537,10 @@ var render = function() {
           [
             _c(
               "router-link",
-              {
-                staticClass: "navy",
-                attrs: { "data-toggle": "collapse", to: { name: "Dashboard" } }
-              },
+              { staticClass: "navy", attrs: { to: { name: "Dashboard" } } },
               [
-                _c("i", {
-                  staticClass: "fa fa-tachometer",
-                  staticStyle: { color: "#eada0f" }
-                }),
-                _vm._v("\r\n                  Dashboard\r\n            ")
+                _c("i", { staticClass: "fa fa-tachometer" }),
+                _vm._v(" Dashboard\r\n            ")
               ]
             )
           ],
@@ -40616,7 +40602,10 @@ var render = function() {
                       to: { name: "sections" }
                     }
                   },
-                  [_vm._v("\r\n                  Sections\r\n            ")]
+                  [
+                    _c("i", { staticClass: "fa fa-list-alt" }),
+                    _vm._v("\r\n                  Sections\r\n            ")
+                  ]
                 )
               ],
               1
@@ -40655,7 +40644,10 @@ var render = function() {
                       to: { name: "surveys" }
                     }
                   },
-                  [_vm._v("\r\n            Surveys\r\n            ")]
+                  [
+                    _c("i", { staticClass: "fas fa-poll" }),
+                    _vm._v("\r\n            Surveys\r\n            ")
+                  ]
                 )
               ],
               1
@@ -40681,7 +40673,10 @@ var render = function() {
                       to: { name: "locations" }
                     }
                   },
-                  [_vm._v("\r\n            Locations\r\n            ")]
+                  [
+                    _c("i", { staticClass: "fa fa-location-arrow" }),
+                    _vm._v("\r\n            Locations\r\n            ")
+                  ]
                 )
               ],
               1
@@ -40714,10 +40709,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("a", { staticClass: "navy", attrs: { href: "#Category" } }, [
       _c("i", {
-        staticClass: "fa fa-flask",
-        staticStyle: { color: "#eada0f" }
+        staticClass: "fa fa-list-alt",
+        attrs: { "aria-hidden": "true" }
       }),
-      _vm._v("  Category "),
+      _vm._v("   Category"),
       _c("i", { staticClass: "fa fa-chevron-right" })
     ])
   },
@@ -40726,10 +40721,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { staticClass: "navy", attrs: { href: "#Sections" } }, [
-      _c("i", {
-        staticClass: "fa fa-flask",
-        staticStyle: { color: "#eada0f" }
-      }),
+      _c("i", { staticClass: "fa fa-list-alt" }),
       _vm._v("  Section "),
       _c("i", { staticClass: "fa fa-chevron-right" })
     ])
@@ -40739,11 +40731,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { staticClass: "navy", attrs: { href: "#Survey" } }, [
-      _c("i", {
-        staticClass: "fa fa-flask",
-        staticStyle: { color: "#eada0f" }
-      }),
-      _vm._v("  Survey "),
+      _c("i", { staticClass: "fas fa-poll" }),
+      _vm._v(" Survey "),
       _c("i", { staticClass: "fa fa-chevron-right" })
     ])
   },
@@ -40752,10 +40741,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("a", { staticClass: "navy", attrs: { href: "#Location" } }, [
-      _c("i", {
-        staticClass: "fa fa-flask",
-        staticStyle: { color: "#eada0f" }
-      }),
+      _c("i", { staticClass: "fa fa-map-marker" }),
       _vm._v("  Locations "),
       _c("i", { staticClass: "fa fa-chevron-right" })
     ])
@@ -40792,7 +40778,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "page-header" }, [
-        _c("div", { staticClass: "row pgh" })
+        _c("div", { staticClass: "row pgh" }, [
+          _c("div", { staticClass: "col-sm-6 " })
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
@@ -40909,7 +40897,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "page-header" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-6 " }, [
+        _c("div", { staticClass: "col-sm-6  " }, [
           _c(
             "h4",
             {
@@ -40917,7 +40905,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Create Category")]
@@ -41055,7 +41043,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Edit Category")]
@@ -41147,7 +41135,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Categories")]
@@ -41269,7 +41257,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v(" Category")]
@@ -41365,7 +41353,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Create Category")]
@@ -41503,7 +41491,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Edit Category")]
@@ -41536,30 +41524,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "page-header" }, [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-sm-4 createbtn" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "btn btn-success ",
-                attrs: { to: { name: "createLocation" } }
-              },
-              [
-                _c("i", { staticClass: "fa fa-plus" }),
-                _vm._v(" Create Location")
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ]),
+    _vm._m(0),
     _vm._v(" "),
     _c("table", { staticClass: "table table-striped table-hover" }, [
       _vm._m(1),
@@ -41606,19 +41571,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-6" }, [
-      _c(
-        "h4",
-        {
-          staticStyle: {
-            "font-weight": "bold",
-            "font-size": "25px",
-            color: "rgb(25 26 27)",
-            "margin-top": "-73px"
-          }
-        },
-        [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Locations")]
-      )
+    return _c("div", { staticClass: "page-header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c(
+            "h4",
+            {
+              staticStyle: {
+                "font-weight": "bold",
+                "font-size": "25px",
+                color: "rgb(25 26 27)",
+                "margin-top": "0px"
+              }
+            },
+            [_c("i", { staticClass: "fa fa-plus" }), _vm._v("Locations")]
+          )
+        ])
+      ])
     ])
   },
   function() {
@@ -41726,7 +41695,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v(" Category")]
@@ -41840,7 +41809,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "page-header" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-6 " }, [
+        _c("div", { staticClass: "col-sm-6 ph" }, [
           _c(
             "h4",
             {
@@ -41848,7 +41817,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v("Create Section")]
@@ -41995,30 +41964,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "page-header" }, [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "col-sm-4 createbtn" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "btn btn-success ",
-                attrs: { to: { name: "createSection" } }
-              },
-              [
-                _c("i", { staticClass: "fa fa-plus" }),
-                _vm._v(" Create Section")
-              ]
-            )
-          ],
-          1
-        )
-      ])
-    ]),
+    _vm._m(0),
     _vm._v(" "),
     _c("table", { staticClass: "table table-striped table-hover" }, [
       _vm._m(1),
@@ -42064,19 +42010,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-6" }, [
-      _c(
-        "h4",
-        {
-          staticStyle: {
-            "font-weight": "bold",
-            "font-size": "25px",
-            color: "rgb(25 26 27)",
-            "margin-top": "-73px"
-          }
-        },
-        [_vm._v("Sections")]
-      )
+    return _c("div", { staticClass: "page-header" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-6" }, [
+          _c(
+            "h4",
+            {
+              staticStyle: {
+                "font-weight": "bold",
+                "font-size": "25px",
+                color: "rgb(25 26 27)",
+                "margin-top": "0px"
+              }
+            },
+            [_vm._v("Sections")]
+          )
+        ])
+      ])
     ])
   },
   function() {
@@ -42192,7 +42142,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v(" Section")]
@@ -42414,7 +42364,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v("Create Section")]
@@ -42619,14 +42569,12 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v("Surveys")]
           )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-4 createbtn" })
+        ])
       ])
     ])
   },
@@ -42747,7 +42695,7 @@ var staticRenderFns = [
                 "font-weight": "bold",
                 "font-size": "25px",
                 color: "rgb(25 26 27)",
-                "margin-top": "-73px"
+                "margin-top": "0px"
               }
             },
             [_vm._v(" Section")]

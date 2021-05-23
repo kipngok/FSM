@@ -4,6 +4,9 @@
   	   <div class="page-header">
         <div class="row pgh">
             
+            <div class="col-sm-6 ">
+               
+                </div>
         </div>
     </div>
     <div class="row">
