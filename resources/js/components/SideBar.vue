@@ -4,16 +4,16 @@
   <div class="col-sm-2 sidebar">
     <ul class="sidebar-menu">
     <li> 
+     
       <router-link
               class="navy"
-              data-toggle="collapse"
-              :to="{ name: 'Dashboard' }"
-                  > <i class="fa fa-tachometer" style="color: #eada0f;"></i>
-                  Dashboard
+              :to="{ name: 'Dashboard' }">
+              <i class="fa fa-tachometer">
+              </i> Dashboard
             </router-link>
      </li>
        <li>
-     <a href="#Category" class="navy"><i class="fa fa-flask" style="color: #eada0f;"></i>  Category <i class="fa fa-chevron-right"></i>
+     <a href="#Category" class="navy"><i class="fa fa-list-alt" aria-hidden="true"></i>   Category<i class="fa fa-chevron-right"></i>
      </a>
      <ul class="nolist">
       <li> <router-link
@@ -32,14 +32,14 @@
 
 
       <li>
-     <a href="#Sections" class="navy"><i class="fa fa-flask" style="color: #eada0f;"></i>  Section <i class="fa fa-chevron-right"></i>
+     <a href="#Sections" class="navy"><i class="fa fa-list-alt"></i>  Section <i class="fa fa-chevron-right"></i>
      </a>
      <ul class="nolist">
       <li> <router-link
               class="nav-link"
               data-toggle="collapse"
               :to="{ name: 'sections' }"
-                  >
+                  ><i class="fa fa-list-alt"></i>
                   Sections
             </router-link></li>
 
@@ -51,7 +51,7 @@
       </li> 
 
        <li>
-     <a href="#Survey" class="navy"><i class="fa fa-flask" style="color: #eada0f;"></i>  Survey <i class="fa fa-chevron-right"></i>
+     <a href="#Survey" class="navy"><i class="fas fa-poll"></i> Survey <i class="fa fa-chevron-right"></i>
      </a>
      <ul class="nolist">
       <li> 
@@ -59,7 +59,7 @@
               class="nav-link"
               data-toggle="collapse"
               :to="{ name: 'surveys' }"
-              >
+              ><i class="fas fa-poll"></i>
             Surveys
             </router-link></li>
       <li> 
@@ -70,7 +70,7 @@
       </li> 
 
       <li>
-     <a href="#Location" class="navy"><i class="fa fa-flask" style="color: #eada0f;"></i>  Locations <i class="fa fa-chevron-right"></i>
+     <a href="#Location" class="navy"><i class="fa fa-map-marker"></i>  Locations <i class="fa fa-chevron-right"></i>
      </a>
      <ul class="nolist">
       <li> 
@@ -79,6 +79,7 @@
               data-toggle="collapse"
               :to="{ name: 'locations' }"
               >
+              <i class="fa fa-location-arrow"></i>
             Locations
             </router-link></li>
       <li> 

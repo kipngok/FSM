@@ -3,13 +3,9 @@
           <div class="page-header">
         <div class="row pgh">
             <div class="col-sm-6">
-                    <h4 style="font-weight:bold;  font-size: 25px; color: rgb(25 26 27);margin-top: -73px;">Surveys</h4>
+                    <h4 style="font-weight:bold;  font-size: 25px; color: rgb(25 26 27);margin-top: 0px;">Surveys</h4>
                 </div>
-                <div class="col-sm-4 createbtn">
-
-
-              <!--  <router-link :to="{name: 'createSurvey'}" class="btn btn-success "><i class="fa fa-plus"></i> Create Survey</router-link> -->
-                </div>
+             
         </div>
     </div>
  

@@ -53,10 +53,10 @@
       </div>
     </nav>
     <div class="row">
-    	<div class="col-sm-6 ">
+    	<div class="col-sm-4 col-sidebar ">
     	 <SideBar></SideBar>
     	</div>
-    	<div class="col rv">
+    	<div class="col-sm-8 col">
       <router-view></router-view>
     </div>
     </div>
@@ -81,34 +81,18 @@ export default {
 };
 </script>
 <style>
-.col-sm-6 {
+.col-sidebar {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 70px;
      margin-left: 0px;
 }
-
-/*.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 173%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}*/
-/*.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 64%;
-   margin-left: -467px;
-}*/
 .col {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 61%;
-    margin-left: -456px;
+    margin-left: -420px;
 }
 
 .page-header {
@@ -159,7 +143,7 @@ export default {
   }
   .sidebar {
     float:left;
-    background-color:#8B8C90;
+    background-color: #171819;
     position: fixed;
     padding: 0px;
     min-height:85vh;
@@ -189,10 +173,9 @@ export default {
 
 .sidebar-menu li a.active {
     text-decoration: none;
-    color: #E1B00B;
-    background-color: #FFF;
+    color: #fff;
+    background-color: #949494;
 }
-
 .sidebar-menu{
   margin: 0px;
   margin-top: 50px;
