@@ -1,8 +1,20 @@
 <template>
   <div class="home col-5 mx-auto py-5 mt-5">
-    <h1 class="text-center">Login</h1>
+    <h1 class="text-center">Register</h1>
     <div class="card">
       <div class="card-body">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            v-model="form.name"
+            class="form-control"
+            id="name"
+          />
+          <span class="text-danger" v-if="errors.name">
+            {{ errors.name[0] }}
+          </span>
+        </div>
         <div class="form-group">
           <label for="email">Email address:</label>
           <input
@@ -27,8 +39,24 @@
             {{ errors.password[0] }}
           </span>
         </div>
-        <button @click.prevent="login" class="btn btn-primary btn-block">
-          Login
+        <div class="form-group">
+          <label for="password_confirmation">Confirm Password:</label>
+          <input
+            type="password"
+            v-model="form.password_confirmation"
+            class="form-control"
+            id="password_confirmation"
+          />
+          <span class="text-danger" v-if="errors.password_confirmation">
+            {{ errors.password_confirmation[0] }}
+          </span>
+        </div>
+        <button
+          type="submit"
+          @click.prevent="register"
+          class="btn btn-primary btn-block"
+        >
+          Register
         </button>
       </div>
     </div>
@@ -41,19 +69,19 @@ export default {
   data() {
     return {
       form: {
+        name: "",
         email: "",
-        password: ""
+        password: "",
+        password_confirmation: ""
       },
       errors: []
     };
   },
   methods: {
-    login() {
-      User.login(this.form)
+    register() {
+      User.register(this.form)
         .then(() => {
-          this.$root.$emit("login", true);
-          localStorage.setItem("auth", "true");
-          this.$router.push({ name: "Dashboard" });
+          this.$router.push({ name: "Login" });
         })
         .catch(error => {
           if (error.response.status === 422) {

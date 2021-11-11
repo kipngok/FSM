@@ -1,57 +1,42 @@
  <template>
   <div>
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-      <router-link :to="{ name: 'Dashboard' }" class="navbar-brand"
-        >FSM</router-link
-      >
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <!-- <ul class="navbar-nav">
-          <li class="nav-item">
-            <router-link
-              class="nav-link"
-              data-toggle="collapse"
-              :to="{ name: 'Dashboard' }"
-            >
-              Dashboard
-            </router-link>
-          </li>
-           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              data-toggle="collapse"
-              :to="{ name: 'survey' }"
-            >
-              Survey
-            </router-link>
-          </li>
-           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              data-toggle="collapse"
-              :to="{ name: 'section' }"
-            >
-              Sections
-            </router-link>
-          </li>
-           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              data-toggle="collapse"
-              :to="{ name: 'createCategory' }"
-            >
-              Create Category
-            </router-link>
-          </li>
-        </ul> -->
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="container">
+      <div class="navbar-header">
+        <router-link class="navbar-brand" :to="{ name: 'home' }">Laravel </router-link>
       </div>
-    </nav>
+      <ul class="nav navbar-nav">
+        <router-link
+          v-if="!isLoggedIn"
+          class="nav-item nav-link"
+          :to="{ name: 'Login' }"
+        >
+          Login
+        </router-link>
+        <router-link
+          v-if="!isLoggedIn"
+          class="nav-item nav-link"
+          :to="{ name: 'Register' }"
+        >
+          Register
+        </router-link>
+        <router-link
+          v-if="isLoggedIn"
+          class="nav-item nav-link"
+          :to="{ name: 'Dashboard' }"
+        >
+          Dashboard
+        </router-link>  
+        <a
+          class="nav-item nav-link"
+          v-if="isLoggedIn"
+          @click.prevent="logout"
+          href="#"
+          >Logout</a
+        >
+      </ul>
+    </div>
+  </nav>
     <div class="row">
     	<div class="col-sm-4 col-sidebar ">
     	 <SideBar></SideBar>
@@ -67,7 +52,9 @@
   </div>
 </template>
 
+
 <script>
+import User from "./apis/User";
 import SideBar from "./components/SideBar.vue";
 export default {
 	 components: {
@@ -78,6 +65,27 @@ export default {
       $("#navbarCollapse").collapse("hide");
     },
   },
+    data() {
+    return {
+      isLoggedIn: false
+    };
+  },
+    mounted() {
+    this.$root.$on("login", () => {
+      this.isLoggedIn = true;
+    });
+
+    this.isLoggedIn = !!localStorage.getItem("auth");
+  },
+  methods: {
+    logout() {
+      User.logout().then(() => {
+        localStorage.removeItem("auth");
+        this.isLoggedIn = false;
+        this.$router.push({ path: "/login" });
+      });
+    }
+  }
 };
 </script>
 <style>
