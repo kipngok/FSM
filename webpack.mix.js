@@ -12,5 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .sourceMaps();
+// Or this if you want to extract styles as well
+// Feel free to check the documentation for more customisations
+// mix.js('resources/js/app.js', 'public/js')
+// 	.sass('resources/sass/app.scss', 'public/css')
+// 	.sourceMaps()
+// .vue({
+//     extractStyles: true,
+//     globalStyles: false
+// })
+// .postCss('resources/css/app.css', 'public/css', [
+//         //
+// ]);

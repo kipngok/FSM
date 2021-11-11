@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Dashboard from './views/Dashboard.vue';
+
 import ListCategories from './views/category/ListCategories.vue';
 import EditCategory from './views/category/EditCategory.vue';
 import CreateCategory from './views/category/CreateCategory.vue';
@@ -23,18 +23,41 @@ import EditSurvey from './views/survey/EditSurvey.vue';
 import CreateSurvey from './views/survey/CreateSurvey.vue';
 import ShowSurvey from './views/survey/ShowSurvey.vue';
 
+import TakeSurvey from './views/takeSurvey/TakeSurvey.vue';
+
+import Home from "./views/Home.vue";
+import Dashboard from './views/Dashboard.vue';
+import Login from "./views/Login.vue";
+import Register from "./views/Register.vue";
+
+
 
 
 Vue.use(VueRouter);
-
-const router = new VueRouter({
-    mode: 'history',
-    linkExactActiveClass: 'active',
-    routes: [
+const routes = [
+            {
+            path: "/",
+            name: "home",
+            component: Home
+            },
+            {
+            path: "/Login",
+            name: "Login",
+            component: Login,
+            meta: { guestOnly: true }
+          },
+          {
+            path: "/register",
+            name: "Register",
+            component: Register,
+            meta: { guestOnly: true }
+          },
         {
             path: '/dashboard',
             name: 'Dashboard',
-            component: Dashboard
+            component: Dashboard,
+            meta: { authOnly: true }
+
         },
           {
             path: '/category',
@@ -116,14 +139,53 @@ const router = new VueRouter({
             path: '/EditLocation/:id',
             name: 'editLocation',
             component: EditLocation
+        },
+
+        {
+            path: '/TakeSurvey',
+            name: 'takeSurvey',
+            component: TakeSurvey
         }
-
-
-
-        
-
   
-    ]
+    ];
+    const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes
 });
 
+function isLoggedIn() {
+  return localStorage.getItem("auth");
+}
+
+router.beforeEach((to, from, next) => {
+  if (to.matched.some(record => record.meta.authOnly)) {
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+    if (!isLoggedIn()) {
+      next({
+        path: "/login",
+        query: { redirect: to.fullPath }
+      });
+    } else {
+      next();
+    }
+  } else if (to.matched.some(record => record.meta.guestOnly)) {
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+    if (isLoggedIn()) {
+      next({
+        path: "/dashboard",
+        query: { redirect: to.fullPath }
+      });
+    } else {
+      next();
+    }
+  } else {
+    next(); // make sure to always call next()!
+  }
+});
+
+
 export default router;
+

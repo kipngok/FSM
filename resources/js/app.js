@@ -15,6 +15,9 @@ import VueRouter from 'vue-router';
 import axios from 'axios';
 import router from './router';
 
+import "bootstrap";
+// import "bootstrap/dist/css/bootstrap.min.css";
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

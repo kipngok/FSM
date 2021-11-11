@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Survey_Taking;
 use Illuminate\Http\Request;
+use App\Models\Category;
+use App\Models\User;
+use App\Models\Section;
 
 class SurveyTakingController extends Controller
 {
@@ -25,6 +28,19 @@ class SurveyTakingController extends Controller
     public function create()
     {
         //
+    }
+
+    public function getUser(){
+        $user = User::get();
+        return response()->json($user);
+    }
+     public function getSection(){
+         $section = Section::get();
+        return response()->json($section);
+    }
+     public function getCategory(){
+        $category = Category::get();
+        return response()->json($category); 
     }
 
     /**
